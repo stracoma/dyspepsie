@@ -15,7 +15,7 @@ class TraitementHp extends StatelessWidget {
           'CAT devant une dyspepsie',
           style: TextStyle(
             color: Colors.white,
-            fontSize: 24,
+            fontSize: 18,
             fontWeight: FontWeight.bold,
           ),
         ),

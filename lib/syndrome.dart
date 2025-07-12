@@ -15,7 +15,7 @@ class Syndrome extends StatelessWidget {
           'CAT devant une dyspepsie',
           style: TextStyle(
             color: Colors.white,
-            fontSize: 24,
+            fontSize: 18,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -25,31 +25,53 @@ class Syndrome extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'Recherche HP',
+              'Syndrome de',
               style: TextStyle(
-                fontSize: 30,
-                color: Colors.blue[800],
+                fontSize: 15,
+                color: Colors.black87,
                 fontWeight: FontWeight.bold,
               ),
             ),
-
-            SizedBox(height: 20),
+            Text(
+              'douleur épigastrique',
+              style: TextStyle(
+                fontSize: 15,
+                color: Colors.black87,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
             Builder(
               builder: (context) {
                 return ElevatedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '/traitement');
+                    Navigator.pushNamed(context, '/sde');
                   },
-                  child: Text('Syndrome de douleur épigastrique (SDE)'),
+                  child: Text('SDE'),
                 );
               },
             ),
-            SizedBox(height: 10),
+            SizedBox(height: 30),
+            Text(
+              'Syndrome de',
+              style: TextStyle(
+                fontSize: 15,
+                color: Colors.black87,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
+              'détresse postprandiale',
+              style: TextStyle(
+                fontSize: 15,
+                color: Colors.black87,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
             ElevatedButton(
               onPressed: () {
-                // Action for the button
+                Navigator.pushNamed(context, '/sdp');
               },
-              child: Text('Syndrome de détresse postprandiale (SDP)'),
+              child: Text('SDP'),
             ),
           ],
         ),

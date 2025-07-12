@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'fibroscopie.dart';
 import 'hp.dart';
 import 'syndrome.dart';
+import 'sde.dart';
+import 'sdp.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,7 +26,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      title: 'dyspepsie',
+      title: 'Dyspepsie',
       home: Scaffold(
         backgroundColor: Colors.blue[100],
         appBar: AppBar(
@@ -33,7 +35,7 @@ class MyApp extends StatelessWidget {
             'CAT devant une dyspepsie',
             style: TextStyle(
               color: Colors.white,
-              fontSize: 24,
+              fontSize: 18,
               fontWeight: FontWeight.bold,
             ),
           ),
@@ -76,6 +78,33 @@ class MyApp extends StatelessWidget {
                   );
                 },
               ),
+              SizedBox(height: 20),
+              Text(
+                'Mes vifs remerciements à :',
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.purple[800],
+                  //fontWeight: FontWeight.bold,
+                ),
+              ),
+              Text(
+                'Pr M.Benazzouz',
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.purple[800],
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              SizedBox(height: 20),
+              Text(
+                'younesbis@doctor.com',
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.black87,
+                  fontWeight: FontWeight.bold,
+                  fontStyle: FontStyle.italic,
+                ),
+              ),
             ],
           ),
         ),
@@ -85,6 +114,8 @@ class MyApp extends StatelessWidget {
         '/hp': (context) => Hp(),
         '/traitement': (context) => TraitementHp(),
         '/syndrome': (context) => Syndrome(),
+        '/sde': (context) => Sde(),
+        '/sdp': (context) => Sdp(),
       },
     );
   }
